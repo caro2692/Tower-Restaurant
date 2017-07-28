@@ -1,7 +1,7 @@
 import React from 'react';
-import FoodAbout from './components/FoodAbout';
-import WineAbout from './components/WineAbout';
-import RoofAbout from './components/RoofAbout';
+import WineAbout from './WineAbout';
+import RoofAbout from './RoofAbout';
+import FoodAbout from './FoodAbout';
 import '../App.css';
 
 const About = () => {
