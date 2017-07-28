@@ -19,7 +19,7 @@ class Header extends React.Component{
 			<Navbar.Collapse>
 				<Nav pullRight>
 					<NavItem eventKey={1} href="#">Rooftop Vibes</NavItem>
-					<NavItem eventKey={2} href="./wines"><Link to="/wines">Wine List</Link></NavItem>
+					<NavItem eventKey={2} href="./wines"><Link className="wine-link" to="/wines">Wine List</Link></NavItem>
 						<NavDropdown eventKey={3} title="Menus!" id="basic-nav-dropdown">
 							<MenuItem eventKey={3.1}>Cocktails</MenuItem>
 							<MenuItem eventKey={3.2}>Happy Hour</MenuItem>

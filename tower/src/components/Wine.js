@@ -1,12 +1,12 @@
 import React from 'react';
-import {Col, Thumbnail} from 'react-bootstrap'
-import '../App.css'
+import {Col, Thumbnail} from 'react-bootstrap';
+import '../App.css';
 import {Link} from 'react-router-dom';
 
 class Wine extends React.Component {
-  render() {
-    const wine = this.props.wine;
-    return(
+	render() {
+		const wine = this.props.wine;
+		return(
       <div>
         <div className="row">
           <div className="col-md-12">
@@ -16,26 +16,27 @@ class Wine extends React.Component {
                 <img className="media-object" src={wine.img_url}/>
               </div>
               <div className="media-body">
-                <h4 className="media-heading">
-                  {wine.name}
-                  |
-                  {wine.vineyard}
-                </h4>
+                <h2 className="media-heading">{wine.name}</h2>
+                <h3>Vineyard: <h4>{wine.vineyard}</h4></h3>
                 <div className="text-right">
-                  {wine.region}
+                  <h3>Region: </h3><h4>{wine.region}</h4>
                 </div>
-                <p>
-                  {wine.vintage}
-                  {wine.rating}
-                </p>
+
+								<div className="text-right">
+                  <img className="media-object" src={wine.background}/>
+                </div>
+
+                <h3>Year:  <h5>{wine.vintage}</h5></h3>
+                <h3>Rating: <h4>{wine.rating}</h4></h3>
+								<h3>Description:</h3> <h4>{wine.description}</h4>
               </div>
               </Link>
             </div>
           </div>
         </div>
       </div>
-    )
-  }
+		);
+	}
 }
 
 export default Wine;

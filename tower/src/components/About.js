@@ -3,7 +3,7 @@ import WineAbout from './WineAbout';
 import RoofAbout from './RoofAbout';
 import FoodAbout from './FoodAbout';
 import '../App.css';
-import {Carousel} from 'react-bootstrap'
+import {Carousel} from 'react-bootstrap';
 
 const About = () => {
 	return (
