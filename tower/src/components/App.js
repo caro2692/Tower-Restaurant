@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import Header from './Header';
+
+
+import Header from './Header'
+import WineList from './WineList'
+
 import '../App.css';
 
 class App extends Component {
@@ -7,6 +11,7 @@ class App extends Component {
 		return (
       <div className="App">
         <Header></Header>
+        <WineList></WineList>
       </div>
 		);
 	}
